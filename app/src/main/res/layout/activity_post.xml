@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activities.PostActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        app:titleTextColor="@color/c1"
+        app:titleTextAppearance="?android:textAppearanceSmall"
+        app:title="Poster"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_above="@+id/lineBottom"
+        android:layout_below="@id/toolbar">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/M2"
+                android:id="@+id/btnImg"
+                android:fontFamily="@font/carter_one"
+                android:textAppearance="?android:textAppearance"
+                android:textColor="@android:color/white"
+                android:text="Image"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/btnSon"
+                app:backgroundTint="@color/c5"
+                android:fontFamily="@font/carter_one"
+                android:layout_margin="@dimen/M2"
+                android:textAppearance="?android:textAppearance"
+                android:textColor="@android:color/white"
+                android:text="vidéo"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/relativeTop">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/default_user"
+                    android:id="@+id/imgPreview"/>
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fab1"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="@dimen/M3"
+                    android:src="@drawable/ic_add_box_black_24dp"
+                    android:backgroundTint="@color/c4"/>
+            </RelativeLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/relat"
+                android:layout_centerInParent="true"
+                android:visibility="gone">
+
+                <VideoView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:id="@+id/video"/>
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fab"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/M3"
+                    android:src="@drawable/ic_add_box_black_24dp"
+                    android:backgroundTint="@color/c4"/>
+            </FrameLayout>
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="gone"
+                android:id="@+id/progress"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/lineBottom"
+        android:layout_alignParentBottom="true">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/M2"
+            android:layout_marginBottom="@dimen/M2"
+            android:layout_marginLeft="@dimen/M3"
+            android:layout_marginRight="@dimen/M3"
+            android:hint="Description"
+            app:hintTextAppearance="?android:textAppearance"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/txtDescription"
+                android:textAppearance="?android:textAppearance"
+                android:inputType="textMultiLine"
+                android:drawablePadding="@dimen/M2"
+                android:fontFamily="@font/comfortaa"
+                tools:targetApi="m" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/M2"
+            android:backgroundTint="@color/c4"
+            android:id="@+id/btnPublier"
+            android:fontFamily="@font/carter_one"
+            android:textAppearance="?android:textAppearance"
+            android:textColor="@android:color/white"
+            android:text="Publier"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

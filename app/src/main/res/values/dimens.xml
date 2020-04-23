@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- LES DIFFERENTES TAILLES DES FORMES -->
+
+    <dimen name="T1">75dp</dimen>
+    <dimen name="T2">80dp</dimen>
+    <dimen name="T3">85dp</dimen>
+    <dimen name="T4">90dp</dimen>
+    <dimen name="T5">100dp</dimen>
+    <dimen name="T6">150dp</dimen>
+    <dimen name="T7">170dp</dimen>
+    <dimen name="T8">200dp</dimen>
+    <dimen name="T9">250dp</dimen>
+    <dimen name="T10">300dp</dimen>
+    <dimen name="T11">350dp</dimen>
+    <dimen name="T12">400dp</dimen>
+
+    <!-- LES DIFFERENTES TAILLES DE MARGE  -->
+
+    <dimen name="M1">1dp</dimen>
+    <dimen name="M2">2.5dp</dimen>
+    <dimen name="M3">5dp</dimen>
+    <dimen name="M4">7.5dp</dimen>
+    <dimen name="M5">10dp</dimen>
+    <dimen name="M6">12.5dp</dimen>
+    <dimen name="M7">15dp</dimen>
+    <dimen name="M8">17.5dp</dimen>
+    <dimen name="M9">20dp</dimen>
+    <dimen name="M10">25dp</dimen>
+    <dimen name="M11">30dp</dimen>
+    <dimen name="M12">35dp</dimen>
+    <dimen name="M13">40dp</dimen>
+    <dimen name="M14">45dp</dimen>
+    <dimen name="M15">50dp</dimen>
+
+    <!-- LES DIFFERENTES TAILLES DE POLICES -->
+
+    <dimen name="P1">9sp</dimen>
+    <dimen name="P2">10sp</dimen>
+    <dimen name="P3">11sp</dimen>
+    <dimen name="P4">12sp</dimen>
+    <dimen name="P5">13sp</dimen>
+    <dimen name="P6">14sp</dimen>
+    <dimen name="P7">15sp</dimen>
+    <dimen name="P8">20sp</dimen>
+    <dimen name="P9">25sp</dimen>
+    <dimen name="P10">30sp</dimen>
+    <dimen name="P11">35sp</dimen>
+    <dimen name="P12">40sp</dimen>
+    <dimen name="P13">45sp</dimen>
+    <dimen name="P14">50sp</dimen>
+
+</resources>

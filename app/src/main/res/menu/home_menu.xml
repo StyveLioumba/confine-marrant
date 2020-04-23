@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/a_propos"
+        android:id="@+id/about"/>
+    <item android:title="@string/inviter"
+        android:id="@+id/invite"/>
+    <item android:title="@string/mode_nuit"
+        android:id="@+id/dark"/>
+</menu>

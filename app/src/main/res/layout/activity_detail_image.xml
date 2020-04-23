@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activities.DetailImageActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        android:layout_alignParentTop="true"
+        app:titleTextColor="@color/colorPrimaryDark"
+        app:titleTextAppearance="?android:textAppearance"/>
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imgSelected"
+        android:layout_margin="@dimen/M3"
+        android:layout_below="@id/toolbar"
+        android:layout_above="@id/lineBottom"
+        android:src="@drawable/ic_launcher_background"
+        android:adjustViewBounds="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/lineBottom"
+        android:layout_alignParentBottom="true">
+        <com.borjabravo.readmoretextview.ReadMoreTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtDescription"
+            android:text="@string/app_name"
+            app:trimExpandedText="Voir plus"
+            app:trimCollapsedText=" Voir moins"
+            app:trimMode="trimModeLine"
+            app:trimLines="6"
+            app:colorClickableText="@color/colorPrimary"
+            android:layout_marginRight="@dimen/M3"
+            android:layout_marginLeft="@dimen/M3"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:fontFamily="@font/cantora_one"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/M3"
+            android:layout_marginBottom="@dimen/M3"
+            android:background="@color/c5"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/partager"
+                android:background="@android:color/transparent"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_reply_black_24dp"
+                android:textAppearance="?android:textAppearance"
+                android:layout_weight="1"/>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:id="@+id/txtDownload"
+                    android:layout_gravity="center"
+                    android:textAppearance="?android:textAppearance"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/M2"
+                    android:id="@+id/imgDownload"
+                    android:src="@drawable/ic_file_download_black_24dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:id="@+id/txtCmt"
+                    android:layout_gravity="center"
+                    android:textAppearance="?android:textAppearance"/>
+                <com.airbnb.lottie.LottieAnimationView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:transitionName="logo_image"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/comment"
+                    app:lottie_autoPlay="true"
+                    android:id="@+id/imgCmt"
+                    android:layout_margin="@dimen/M2"
+                    android:adjustViewBounds="true"
+                    app:lottie_repeatMode="restart"
+                    android:layout_alignParentTop="true"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:id="@+id/txtLikes"
+                    android:layout_gravity="center"
+                    android:textAppearance="?android:textAppearance"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/M2"
+                    android:id="@+id/imgLikes"
+                    android:src="@drawable/ic_favorite_border_black_24dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

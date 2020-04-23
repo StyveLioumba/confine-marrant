@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center">
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="@dimen/M15"
+            android:layout_height="@dimen/M15"
+            app:lottie_loop="true"
+            app:lottie_autoPlay="true"
+            app:lottie_rawRes="@raw/chat"
+            android:id="@+id/imgUser"
+            android:adjustViewBounds="true"
+            app:lottie_repeatMode="restart"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pseudo"
+            android:id="@+id/pseudoUser"
+            android:layout_weight="1"
+            android:textAppearance="?android:textAppearance"
+            android:fontFamily="@font/cantora_one"
+            android:layout_marginStart="@dimen/M3"/>
+        <TextView
+            android:layout_width="@dimen/T8"
+            android:layout_height="wrap_content"
+            android:text="heure"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/P2"
+            android:id="@+id/heure"
+            android:textAlignment="textEnd"
+            android:textAppearance="?android:textAppearance"
+            android:fontFamily="@font/cantora_one"
+            android:layout_marginStart="@dimen/M3"
+            tools:ignore="RtlCompat" />
+    </LinearLayout>
+
+    <com.borjabravo.readmoretextview.ReadMoreTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtCommentaire"
+        android:layout_margin="@dimen/M2"
+        android:textAppearance="?android:textAppearance"
+        android:fontFamily="@font/comfortaa"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtDate"
+        android:textSize="@dimen/P1"
+        android:text="date"
+        android:textAppearance="?android:textAppearance"
+        android:layout_gravity="end"
+        android:layout_margin="@dimen/M2"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/M1"
+        android:background="@android:color/darker_gray"/>
+
+</LinearLayout>

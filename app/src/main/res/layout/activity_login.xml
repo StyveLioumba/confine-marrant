@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".view.activities.LoginActivity">
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:transitionName="logo_image"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/smile_white"
+        app:lottie_autoPlay="true"
+        android:id="@+id/imgLogo"
+        android:scaleType="centerCrop"
+        android:layout_above="@id/lineBottom"
+        android:adjustViewBounds="true"
+        app:lottie_repeatMode="restart"
+        android:layout_alignParentTop="true"
+        android:layout_margin="@dimen/M5"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lineBottom"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/M10"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/logo_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vivez le confinement autrement !"
+            android:textSize="@dimen/P10"
+            android:transitionName="logo_text"
+            android:fontFamily="@font/carter_one"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="@dimen/M2"/>
+        <TextView
+            android:id="@+id/slogan_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Identifie toi pour continuer"
+            android:textAppearance="?android:textAppearance"
+            android:fontFamily="@font/comfortaa"
+            android:textSize="@dimen/P4"
+            android:layout_marginTop="@dimen/M3"
+            android:layout_marginBottom="@dimen/M3"
+            android:layout_marginLeft="@dimen/M4"
+            android:layout_marginRight="@dimen/M4"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/M4"
+            android:layout_marginRight="@dimen/M4"
+            android:orientation="vertical">
+
+            <com.facebook.login.widget.LoginButton
+                android:id="@+id/login_button"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/T1"
+                android:fontFamily="@font/cantora_one"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

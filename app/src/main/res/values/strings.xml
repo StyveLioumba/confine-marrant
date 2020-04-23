@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Confine-marrant</string>
+    <string name="pseudo">Pseudo</string>
+    <string name="continuer">Continuer</string>
+    <string name="version">Version 1.0</string>
+    <string name="_2020_by_essengogroup">© 2020 by EssengoGroup</string>
+    <string name="inviter">Inviter</string>
+    <string name="a_propos">A propos</string>
+    <string name="mode_nuit">Mode nuit</string>
+
+    <string name="facebook_app_id">586751178592459</string>
+    <string name="fb_login_protocol_scheme">fb586751178592459</string>
+    <string name="signaler_ce_post">Signaler ce post</string>
+    <string name="commentaire">Commentaire</string>
+    <string name="deconnexion">deconnexion</string>
+
+</resources>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activities.AboutActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerInParent="true">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/logo"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_name"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textColor="@color/c4"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/carter_one"
+                    android:textSize="@dimen/P11"
+                    android:layout_margin="@dimen/M5"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/version"
+                    android:textAppearance="?android:textAppearance"
+                    android:textColor="@color/c5"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/comfortaa"
+                    android:textSize="@dimen/P5"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_2020_by_essengogroup"
+                    android:layout_margin="@dimen/M3"
+                    android:textAppearance="?android:textAppearance"
+                    android:textColor="@color/c5"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/comfortaa"
+                    android:textSize="@dimen/P5"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Partagez toutes vos folies durant ce confinement avec vos ami(e)s.Que le confinement vous soit léger et on se protège.\n\nRESTEZ CHEZ VOUS !!"
+                android:layout_margin="@dimen/M3"
+                android:textAlignment="center"
+                android:textAppearance="?android:textAppearance"
+                android:textColor="@color/c1"
+                android:layout_above="@id/lineBottom"
+                android:fontFamily="@font/comfortaa"
+                android:textSize="@dimen/P5"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/T5"
+                android:id="@+id/lineBottom"
+                android:orientation="horizontal"
+                android:layout_alignParentBottom="true">
+                <com.airbnb.lottie.LottieAnimationView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:transitionName="logo_image"
+                    app:lottie_loop="true"
+                    android:layout_weight="1"
+                    app:lottie_rawRes="@raw/maison"
+                    app:lottie_autoPlay="true"
+                    android:scaleType="centerCrop"
+                    android:layout_above="@id/lineBottom"
+                    android:adjustViewBounds="true"
+                    app:lottie_repeatMode="restart"
+                    android:layout_margin="@dimen/M3"/>
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:transitionName="logo_image"
+                    app:lottie_loop="true"
+                    android:layout_weight="1"
+                    app:lottie_rawRes="@raw/mask"
+                    app:lottie_autoPlay="true"
+                    android:scaleType="centerCrop"
+                    android:layout_above="@id/lineBottom"
+                    android:adjustViewBounds="true"
+                    app:lottie_repeatMode="restart"
+                    android:layout_margin="@dimen/M3"/>
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:transitionName="logo_image"
+                    app:lottie_loop="true"
+                    android:layout_weight="1"
+                    app:lottie_rawRes="@raw/main"
+                    app:lottie_autoPlay="true"
+                    android:scaleType="centerCrop"
+                    android:layout_above="@id/lineBottom"
+                    android:adjustViewBounds="true"
+                    app:lottie_repeatMode="restart"
+                    android:layout_margin="@dimen/M3"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
